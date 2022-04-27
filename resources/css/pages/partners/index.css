@@ -1,0 +1,82 @@
+.partners-page__partners-list {
+   margin-top: 30px;
+}
+.partners__container {
+   z-index: 1;
+}
+.invitation {
+   position: relative;
+   background-color: #f7f9fc;
+   padding-bottom: 30px;
+}
+.invitation::before {
+   content: "";
+   position: absolute;
+   top: -100px;
+   left: 0px;
+   display: block;
+   width: 100%;
+   height: 550px;
+   background: linear-gradient(0deg, rgba(77, 150, 223, 1) 0%, rgba(255, 255, 255, 1) 80%);
+}
+.invitation__container {
+   display: flex;
+   flex-direction: column;
+   gap: 60px;
+}
+.invitation__text {
+   text-align: justify;
+   width: 40%;
+}
+.invitation__link {
+   width: max-content;
+}
+.invitation-info {
+   background-color: #fff;
+   position: relative;
+   padding: 30px;
+   display: flex;
+   flex-direction: column;
+   gap: 25px;
+   text-align: justify;
+}
+.invitation-img {
+   position: absolute;
+   height: 300px;
+   top: -297px;
+   right: 125px;
+}
+
+@media screen and (max-width: 1399px) {
+}
+@media screen and (max-width: 1199px) {
+   .invitation-img {
+      right: 0px;
+   }
+}
+@media screen and (max-width: 991px) {
+   .invitation__container {
+      gap: 30px;
+   }
+   .invitation-img {
+      height: 250px;
+      top: -247px;
+   }
+}
+@media screen and (max-width: 767px) {
+   .invitation__container {
+      align-items: center;
+   }
+   .invitation__text {
+      text-align: center;
+      width: 100%;
+   }
+   .invitation-img {
+      display: none;
+   }
+}
+@media screen and (max-width: 575px) {
+   .container {
+      width: calc(100% - 10px);
+   }
+}

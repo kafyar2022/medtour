@@ -1,0 +1,115 @@
+.login-page {
+   background: linear-gradient(-135deg, #c850c0, #4158d0);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.login-title {
+   width: 50%;
+}
+.login-img {
+   position: absolute;
+   left: calc(25% - 110px);
+   top: calc(50% - 164px);
+}
+.login-page__container {
+   width: 960px;
+   background-color: #fff;
+   border-radius: 10px;
+   height: 70vh;
+   display: flex;
+   flex-direction: column;
+   align-items: end;
+   justify-content: center;
+}
+.login-form {
+   display: flex;
+   flex-direction: column;
+   width: 50%;
+   justify-content: center;
+   padding: 80px 100px;
+   padding-top: 30px;
+   position: relative;
+}
+.login-form__fail-msg {
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   width: 100%;
+   text-align: center;
+   color: red;
+   font-weight: bold;
+}
+.login-form__error {
+   color: red;
+   font-size: 12px;
+   line-height: 1;
+}
+.login-form__label {
+   position: relative;
+   padding-bottom: 15px;
+}
+.login-form__label::before {
+   font-family: "Font Awesome 5 Pro";
+   position: absolute;
+   height: 50px;
+   left: 30px;
+   top: 0px;
+   width: 30px;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   font-size: px;
+   color: #666;
+}
+.login-form__label--login::before {
+   content: "\f2bd";
+}
+.login-form__label--password::before {
+   content: "\f023";
+}
+.login-form__input {
+   border: none;
+   display: flex;
+   align-items: center;
+   padding: 0px 30px;
+   padding-left: 60px;
+   border-radius: 50px;
+   height: 50px;
+   background-color: #e6e6e6;
+   width: 100%;
+}
+.login-form__submit-btn {
+   height: 50px;
+   background-color: #57b846;
+   font-weight: bold;
+   margin-top: 15px;
+}
+
+@media screen and (max-width: 1399px) {
+}
+@media screen and (max-width: 1199px) {
+}
+@media screen and (max-width: 991px) {
+   .login-page__container {
+      align-items: center;
+      height: 100vh;
+      border-radius: 0px;
+      width: 100% !important;
+   }
+   .login-img {
+      display: none;
+   }
+   .login-form {
+      width: 500px;
+   }
+}
+@media screen and (max-width: 767px) {
+
+}
+@media screen and (max-width: 575px) {
+   .login-form {
+      width: 100%;
+      padding: 30px 15px;
+   }
+}

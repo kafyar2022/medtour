@@ -1,0 +1,153 @@
+.medservice__text,
+.deseases__text {
+   margin-bottom: 30px;
+}
+.medservice-page {
+   padding-bottom: 30px;
+}
+.deseases-list {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 30px;
+}
+.deseases-item {
+   width: 350px;
+   display: flex;
+   flex-direction: column;
+}
+.deseases-title {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   font-size: 16px;
+}
+.deseases-title::before {
+   content: "";
+   background-color: var(--primary);
+   display: block;
+   height: 60px;
+   width: 60px;
+   border-radius: 50%;
+}
+.deseases-item:first-child .deseases-title::before {
+   background-image: url('../img/desease1.png');
+   background-size: 30px;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+.deseases-item:nth-child(2) .deseases-title::before {
+   background-image: url('../img/desease2.png');
+   background-size: 30px;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+.deseases-item:nth-child(3) .deseases-title::before {
+   background-image: url('../img/desease3.png');
+   background-size: 30px;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+.deseases-item:nth-child(4) .deseases-title::before {
+   background-image: url('../img/desease4.png');
+   background-size: 30px;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+.deseases-item:last-child .deseases-title::before {
+   background-image: url('../img/desease5.png');
+   background-size: 30px;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+.deseases-item ul {
+   list-style: circle;
+   font-size: 15px;
+   display: flex;
+   flex-direction: column;
+   margin-left: 100px;
+}
+.deseases-item li {
+   max-width: 400px;
+}
+.whywe-list {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+}
+.whywe-item {
+   display: flex;
+   align-items: center;
+   gap: 15px;
+   width: calc(50% - 15px);
+}
+.whywe-item::before {
+   font-family: "Font Awesome 5 Pro";
+   content: "\f00c";
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 30px;
+   min-width: 30px;
+   color: #fff;
+   background-color: var(--primary);
+   border-radius: 50%;
+   font-size: 20px;
+}
+.ourservices-list {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 15px;
+}
+.ourservices-item {
+   display: flex;
+   align-items: center;
+   gap: 15px;
+   width: 100%;
+}
+.ourservices-item::before {
+   font-family: "Font Awesome 5 Pro";
+   color: var(--primary);
+   font-size: 40px;
+   font-weight: bold;
+   min-width: 50px;
+}
+.ourservices-item:first-child:before {
+   content: "\f58f";
+}
+.ourservices-item:nth-child(2):before {
+   content: "\f0b1";
+}
+.ourservices-item:nth-child(3):before {
+   content: "\f1ad";
+}
+.ourservices-item:nth-child(4):before {
+   content: "\f7e6";
+}
+.ourservices-item:nth-child(5):before {
+   content: "\f291";
+}
+.ourservices-item:last-child:before {
+   content: "\f0f0";
+}
+
+@media screen and (max-width: 1399px) {
+}
+@media screen and (max-width: 1199px) {
+}
+@media screen and (max-width: 991px) {
+
+}
+@media screen and (max-width: 767px) {
+   .deseases-item {
+      width: 400px;
+   }
+   .whywe-item {
+      width: 100%;
+   }
+}
+@media screen and (max-width: 575px) {
+   .deseases-item {
+      width: 100%;
+   }
+}

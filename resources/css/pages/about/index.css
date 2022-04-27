@@ -1,0 +1,12 @@
+.about {
+   padding-bottom: 30px;
+}
+.about-banner {
+   display: block;
+   margin: 15px auto;
+   width: 40%;
+}
+.about__text {
+   margin-top: 15px;
+   text-align: justify;
+}
